@@ -1,0 +1,376 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+ box-sizing: border-box ;
+ scroll-padding-top: 2rem;
+ text-decoration: none;
+ list-style: none;
+ scroll-behavior: smooth;
+}
+:root{ 
+    --main-color: purple;
+    --second-color:  rgb(115, 34, 111)
+    ;
+}
+section{
+    padding: 25px 5%;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+img{
+    width: 20px;
+    right: 10%;
+    left: 10px;
+}
+header{
+    position:fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.ayam-text {
+    display: flex;
+    align-items: center ;
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+}
+.navbar a {
+    font-size: 1rem;
+    padding: 11px 15px;
+    color: var(--second-color);
+    font-weight:600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: var(--main-color)
+}
+#menu-icon{
+    font-size: 10px;
+    cursor: pointer;
+    z-index: 90;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    background: linear-gradient(white,purple);
+    gap:1rem;
+    position: fixed;
+}
+.home-text {
+    flex: 1 1 17rem;
+}
+.apa {
+ 
+    margin-left: 0px ;
+    margin-left: 50px;
+}
+.apa img {
+    animation: animate 3s linear infinite;
+    width: 300px;
+    margin-right: 200px;
+    margin-left: 30%;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-11px,0);
+    }
+    50%{
+        transform: translate(0,-11px);
+    }
+    100%{
+        transform: translate(-11px,0);
+    }
+}
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.home-text h1{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.home-text h2 {
+    font-size: 1.8 rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0
+}
+
+
+.button{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.button:hover {
+    color: #fff;
+    background:var(--second-color) ;
+    padding: 7px 16px;
+    opacity: 100;
+    transition:all 0.5s;
+    transition-timing-function: linear;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.about-text h1{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bold;
+    flex-basis: 30%;
+    cursor: pointer;
+}
+.about-text h3{
+    font-size: medium;
+    color: var(--main-color);
+    font-style: bold;
+    flex-basis: 30%;
+    cursor: pointer;
+}
+
+.about-text {
+    height: auto;
+    width: 400px;
+    margin-top: 20%;
+}
+
+.button-about {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500%;
+    margin-right: 10%;
+}
+.button-about:hover {
+    color: #fff;
+    background:var(--second-color) ;
+    padding: 7px 16px;
+    opacity: 100;
+    transition:all 0.5s;
+    transition-timing-function: linear;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.apel {
+    margin-right: 10%;
+}
+.hoby-text h3{
+    font-size: 300%;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-left: 400px;
+    text-align: 2500px;
+    margin-top: 5%;
+}
+.hoby-text h3{
+    font-size: 300%;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-left: 400px;
+    text-align: 2500px;
+    margin-top: 5%;
+}
+
+.apel img{
+    width: 250px;
+    height: 300px;
+    margin-left: 50%;
+    margin-bottom: 0%;
+
+}
+  
+  .macbook-air .div {
+    background: linear-gradient(white,purple);
+    width: 500%;
+    height: 900px;
+    position: relative;
+  }
+  
+  .macbook-air .overlap {
+    position: absolute;
+    width: 1280px;
+    height: 225px;
+    top: 45px;
+    left: 0;
+  }
+  
+  .macbook-air .line {
+    position: absolute;
+    width: 1280px;
+    height: 8px;
+    top: 136px;
+    left: 0;
+  }
+  
+  .macbook-air .my-hoby {
+    position: absolute;
+    top: 0;
+    left: 462px;
+    text-shadow: 10px 4px 4px #00000040;
+    font-family: "Inknut Antiqua-Bold", Helvetica;
+    font-weight: 700;
+    color: transparent;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-air .text-wrapper {
+    color: #7e1e86;
+  }
+  
+  .macbook-air .span {
+    color: #9e4ca5;
+  }
+  
+  .macbook-air .text-wrapper-2 {
+    position: absolute;
+    top: 122px;
+    left: 261px;
+    font-family: "Inknut Antiqua-Bold", Helvetica;
+    font-weight: 100;
+    color: purple;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-air .text-wrapper-3 {
+    position: absolute;
+    top: 132px;
+    left: 717px;
+    font-family: "Inknut Antiqua-Bold", Helvetica;
+    font-weight: 700;
+    color: purple;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-air .overlap-group {
+    position: absolute;
+    width: 390px;
+    height: 410px;
+    top: 271px;
+    left: 156px;
+    background-color: #7e1e86;
+    border-radius: 20px;
+  }
+  
+  .macbook-air .element {
+    position: absolute;
+    width: 331px;
+    height: 354px;
+    top: 35px;
+    left: 33px;
+    object-fit: cover;
+  }
+  
+  .macbook-air .spotify-wrapper {
+    position: absolute;
+    width: 398px;
+    height: 423px;
+    top: 271px;
+    left: 679px;
+    background-color: #7e1e86;
+    border-radius: 20px;
+  }
+  
+  .macbook-air .spotify {
+    position: absolute;
+    width: 319px;
+    height: 354px;
+    top: 35px;
+    left: 38px;
+    object-fit: cover;
+  }
+  
+  .macbook-air .overlap-group-2 {
+    position: absolute;
+    width: 433px;
+    height: 84px;
+    top: 722px;
+    left: 424px;
+  }
+  
+  .macbook-air .rectangle {
+    position: absolute;
+    width: 433px;
+    height: 80px;
+    top: 4px;
+    left: 0;
+  }
+  
+  .macbook-air .text-wrapper-4 {
+    position: absolute;
+    top: 0;
+    left: 96px;
+    font-family: "Inknut Antiqua-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffe2fa;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .macbook-air .vector {
+    position: absolute;
+    width: 40px;
+    height: 41px;
+    top: 22px;
+    left: 38px;
+  }
+
+  .button-Hoby{
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+    margin-right: 50%;
+    margin-left: 10%;
+  }
+    .button-Hoby:hover {
+        color: #fff;
+        background:var(--second-color) ;
+        padding: 7px 16px;
+        opacity: 100;
+        transition:all 0.5s;
+        transition-timing-function: linear;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .apaan {
+    font-size: 100%;
+    color: var(--main-color);
+    font-weight: bold;
+    margin-left: 350px;
+    text-align: 2500px;
+    margin-top: 0%;
+    }
